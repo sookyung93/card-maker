@@ -1,8 +1,8 @@
 import React from 'react';
-import './app.css';
+import styles from './app.module.css';
 
 function App() {
-  return <h1>Hello :)</h1>;
+  return <></>;
 }
 
 export default App;

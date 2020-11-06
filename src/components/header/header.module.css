@@ -1,0 +1,16 @@
+@value makerPink from '../../common/colors.css';
+
+.header {
+  width: 100%;
+  padding: 0.5em;
+  background-color: makerPink;
+  text-align: center;
+}
+
+.logo {
+  width: 3em;
+}
+
+.title {
+  margin: 0;
+}

@@ -1,5 +1,6 @@
-@value makerPink from '../../common/colors.css';
+@value makerPink, makerWhite from '../../common/colors.css';
 
 .footer {
   background-color: makerPink;
+  color: makerWhite;
 }

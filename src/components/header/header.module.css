@@ -1,10 +1,23 @@
-@value makerPink from '../../common/colors.css';
+@value makerPink, makerWhite, makerLightPink from '../../common/colors.css';
 
 .header {
   width: 100%;
   padding: 0.5em;
   background-color: makerPink;
   text-align: center;
+  position: relative;
+}
+
+.logout {
+  position: absolute;
+  padding: 0.5em;
+  color: white;
+  cursor: pointer;
+  right: 0.5em;
+  top: 0.5em;
+  border: 1px solid makerLightPink;
+  border-radius: 4px;
+  background-color: makerLightPink;
 }
 
 .logo {
@@ -13,4 +26,5 @@
 
 .title {
   margin: 0;
+  color: makerWhite;
 }

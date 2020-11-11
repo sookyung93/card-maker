@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "https://sookyung93.github.io/card-maker/static/css/main.1ccc2fdd.chunk.css",
-    "main.js": "https://sookyung93.github.io/card-maker/static/js/main.336d6826.chunk.js",
-    "main.js.map": "https://sookyung93.github.io/card-maker/static/js/main.336d6826.chunk.js.map",
+    "main.js": "https://sookyung93.github.io/card-maker/static/js/main.b1c89869.chunk.js",
+    "main.js.map": "https://sookyung93.github.io/card-maker/static/js/main.b1c89869.chunk.js.map",
     "runtime-main.js": "https://sookyung93.github.io/card-maker/static/js/runtime-main.5b6fe8e1.js",
     "runtime-main.js.map": "https://sookyung93.github.io/card-maker/static/js/runtime-main.5b6fe8e1.js.map",
     "static/js/2.70098f4e.chunk.js": "https://sookyung93.github.io/card-maker/static/js/2.70098f4e.chunk.js",
     "static/js/2.70098f4e.chunk.js.map": "https://sookyung93.github.io/card-maker/static/js/2.70098f4e.chunk.js.map",
     "index.html": "https://sookyung93.github.io/card-maker/index.html",
-    "precache-manifest.8f6786bb0a93f9fcae5849a6ae7ed509.js": "https://sookyung93.github.io/card-maker/precache-manifest.8f6786bb0a93f9fcae5849a6ae7ed509.js",
+    "precache-manifest.ed9e409b399ef96dd5ea3974f61007a0.js": "https://sookyung93.github.io/card-maker/precache-manifest.ed9e409b399ef96dd5ea3974f61007a0.js",
     "service-worker.js": "https://sookyung93.github.io/card-maker/service-worker.js",
     "static/css/main.1ccc2fdd.chunk.css.map": "https://sookyung93.github.io/card-maker/static/css/main.1ccc2fdd.chunk.css.map",
     "static/js/2.70098f4e.chunk.js.LICENSE.txt": "https://sookyung93.github.io/card-maker/static/js/2.70098f4e.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.5b6fe8e1.js",
     "static/js/2.70098f4e.chunk.js",
     "static/css/main.1ccc2fdd.chunk.css",
-    "static/js/main.336d6826.chunk.js"
+    "static/js/main.b1c89869.chunk.js"
   ]
 }

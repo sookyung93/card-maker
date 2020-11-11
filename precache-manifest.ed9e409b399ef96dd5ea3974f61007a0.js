@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cd87a5c9010cc0566d7a525cbf88af23",
+    "revision": "a8a2139c5cad104a5b097a1c4b351eb0",
     "url": "https://sookyung93.github.io/card-maker/index.html"
   },
   {
-    "revision": "05164c42a480621b314b",
+    "revision": "340ad468385bb85cefc7",
     "url": "https://sookyung93.github.io/card-maker/static/css/main.1ccc2fdd.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://sookyung93.github.io/card-maker/static/js/2.70098f4e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "05164c42a480621b314b",
-    "url": "https://sookyung93.github.io/card-maker/static/js/main.336d6826.chunk.js"
+    "revision": "340ad468385bb85cefc7",
+    "url": "https://sookyung93.github.io/card-maker/static/js/main.b1c89869.chunk.js"
   },
   {
     "revision": "1cc9a1f4a407a72de437",

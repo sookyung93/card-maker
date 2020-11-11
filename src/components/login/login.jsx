@@ -19,9 +19,7 @@ const Login = ({ authService }) => {
   };
 
   useEffect(() => {
-    console.log('hi');
     authService.onAuthChanged((user) => {
-      console.log('hi2');
       user && goToMaker(user.uid);
     });
   });

@@ -1,0 +1,13 @@
+@value makerPink from '../../common/colors.css';
+
+.preview {
+  flex: 1 1 50%;
+  text-align: center;
+  background-color: #d3fcf3;
+  /* background-color: makerWhite; */
+}
+
+.title {
+  color: makerPink;
+  margin: 1rem;
+}

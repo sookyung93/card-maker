@@ -1,19 +1,32 @@
 import React from 'react';
 import styles from './card.module.css';
 
-const Card = (props) => {
+const defaultImg = '/images/default_logo.png';
+
+const Card = ({ card }) => {
+  const url = card.fileURL || defaultImg;
   return (
-    <li className={styles.card}>
-      <img class={styles.img} src={props.card.fileURL} alt="profile image" />
+    <li className={`${styles.card} ${getStyles(card.theme)}`}>
+      <img class={styles.img} src={url} alt="profile image" />
       <div className={styles.info}>
-        <h1 className={styles.name}>{props.card.name}</h1>
-        <p className={styles.company}>{props.card.company}</p>
-        <p className={styles.title}>{props.card.title}</p>
-        <p className={styles.email}>{props.card.email}</p>
-        <p className={styles.message}>{props.card.message}</p>
+        <h1 className={styles.name}>{card.name}</h1>
+        <p className={styles.company}>{card.company}</p>
+        <p className={styles.title}>{card.title}</p>
+        <p className={styles.email}>{card.email}</p>
+        <p className={styles.message}>{card.message}</p>
       </div>
     </li>
   );
 };
 
+function getStyles(theme) {
+  switch (theme) {
+    case 'dark':
+      return styles.dark;
+    case 'light':
+      return styles.light;
+    case 'colorful':
+      return styles.colorful;
+  }
+}
 export default Card;

@@ -1,9 +1,9 @@
-@value makerPink, makerWhite from '../../common/colors.css';
+@value makerDarkBlue, makerWhite from '../../common/colors.css';
 
 h1 {
   margin: 0;
 }
 .footer {
-  background-color: makerPink;
+  background-color: makerDarkBlue;
   color: makerWhite;
 }

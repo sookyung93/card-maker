@@ -1,4 +1,4 @@
-@value makerWhite, makerPink, makerLightPink from '../../common/colors.css';
+@value makerWhite, makerDarkBlue, makerBlue from '../../common/colors.css';
 
 ul {
   list-style: none;
@@ -36,7 +36,7 @@ li:first-child {
 }
 
 .button {
-  border: 1px solid makerPink;
+  border: 2px solid makerDarkBlue;
   border-radius: 20px;
   width: 90%;
   padding: 1em;
@@ -44,5 +44,5 @@ li:first-child {
 }
 
 .button:hover {
-  background-color: makerLightPink;
+  background-color: makerBlue;
 }

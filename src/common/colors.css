@@ -3,9 +3,8 @@
 @value makerShadow: rgba(217, 217, 217, 1);
 @value makerColorful: linear-gradient(166deg, rgba(237, 193, 211, 1) 0%,rgba(212, 149, 161, 1) 60%, rgba(162, 63, 63, 1) 100%, rgba(127, 188, 242, 1) 100%);
 @value makerWheat: wheat;
-@value makerLightBeige: #E8E0D5;
-@value makerLightPink: #F1BBBE;
-@value makerPink: #EE858D;
-@value makerDarkBlue: #1C1F30;
-@value makerBlue: #27587C;
-@value makerLightBlue: #B7CDE2;
+@value makerBrown: #8E605B;
+@value makerGreen: #404037;
+@value makerDarkBlue: #ACBBC0;
+@value makerBlue: #C3D3D2;
+@value makerLightBeige: #E9E8E6;

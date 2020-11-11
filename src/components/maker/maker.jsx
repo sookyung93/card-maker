@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import CardMaker from '../card_maker/card_maker';
+import Editor from '../editor/editor';
 import CardPreview from '../card_preview/card_preview';
 import Footer from '../footer/footer';
 import Header from '../header/header';
@@ -61,7 +61,7 @@ const Maker = (props) => {
     <section className={styles.maker}>
       <Header onLogout={onLogout} />
       <div className={styles.container}>
-        <CardMaker />
+        <Editor cards={cards} />
         <CardPreview cards={cards} />
       </div>
       <Footer />

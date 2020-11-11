@@ -12,18 +12,6 @@
   flex: 1;
 }
 
-.card_maker {
-  flex: 1 1 50%;
-  text-align: center;
-  background-color: #f9efa8;
-}
-
-.card_preview {
-  flex: 1 1 50%;
-  text-align: center;
-  background-color: #d3fcf3;
-}
-
 @media screen and (max-width: mediaQuery) {
   .container {
     flex-direction: column;

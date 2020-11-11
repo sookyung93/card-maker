@@ -1,13 +1,19 @@
-@value makerDarkBlue from '../../common/colors.css';
+@value makerDarkBlue, makerWhite from '../../common/colors.css';
 
 .preview {
   flex: 1 1 50%;
   text-align: center;
-  background-color: #d3fcf3;
-  /* background-color: makerWhite; */
+  background-color: makerWhite;
 }
 
 .title {
   color: makerDarkBlue;
   margin: 1rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

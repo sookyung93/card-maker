@@ -1,0 +1,46 @@
+p {
+  margin: 0;
+}
+
+.card {
+  width: 80%;
+  background-color: black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0.2em 0;
+}
+
+.img {
+  width: 10em;
+  height: 10em;
+  margin-left: 0.5em;
+  padding: 1em;
+  border-radius: 50%;
+}
+
+.info {
+  width: 100%;
+  text-align: left;
+}
+
+.name,
+.company,
+.title,
+.email,
+.message {
+  margin-bottom: 0.2em;
+}
+
+.company {
+  margin-bottom: 0.8em;
+}
+
+.company::after {
+  content: '';
+  display: block;
+  width: 90%;
+  height: 2px;
+  background-color: white;
+  transform: translateY(0.5em);
+}

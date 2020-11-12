@@ -1,7 +1,7 @@
 @value makerBlack: black;
 @value makerWhite: white;
 @value makerShadow: rgba(217, 217, 217, 1);
-@value makerColorful: linear-gradient(166deg, rgba(237, 193, 211, 1) 0%,rgba(212, 149, 161, 1) 60%, rgba(162, 63, 63, 1) 100%, rgba(127, 188, 242, 1) 100%);
+@value makerColorful: linear-gradient(300deg, #fae5d5, #fdded7, #fad4d2, #cac2d1, #bcc7dc);
 @value makerWheat: wheat;
 @value makerBeige: #D4C2B6;
 @value makerBrown: #8E605B;

@@ -17,7 +17,7 @@ const Maker = (props) => {
       email: 'bomi@gmail.com',
       message: 'Hello',
       fileName: 'bomi',
-      fileURL: '/images/BOMI.jpg',
+      fileURL: 'images/BOMI.jpg',
     },
     {
       id: '2',
@@ -28,7 +28,7 @@ const Maker = (props) => {
       email: 'gyu@gmail.com',
       message: 'Hello',
       fileName: 'sunggyu',
-      fileURL: '/images/SUNGGYU.jpg',
+      fileURL: 'images/SUNGGYU.jpg',
     },
     {
       id: '3',

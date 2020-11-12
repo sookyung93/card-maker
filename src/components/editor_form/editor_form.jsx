@@ -1,4 +1,6 @@
 import React from 'react';
+import ImageFileUpload from '../image_file_upload/image_file_upload';
+import EditorButton from '../editor_button/editor_button';
 import styles from './editor_form.module.css';
 
 const EditorForm = ({ card }) => {
@@ -12,6 +14,7 @@ const EditorForm = ({ card }) => {
     fileName,
     fileURL,
   } = card;
+  const onSubmit = () => {};
   return (
     <form className={styles.editor}>
       <div className={styles.line1}>
@@ -31,8 +34,14 @@ const EditorForm = ({ card }) => {
         <textarea className={styles.message} type="text" value={message} />
       </div>
       <div className={styles.line4}>
-        <div className={styles.fileName}>{fileName}</div>
-        <button className={styles.button}>Delete</button>
+        {/* <div className={styles.fileName}>{fileName}</div> */}
+        <div className={styles.ImageFileUpload}>
+          <ImageFileUpload fileName={fileName} />
+        </div>
+        {/* <button className={styles.button}>Delete</button> */}
+        <div className={styles.button}>
+          <EditorButton text="Delete" onClick={onSubmit} />
+        </div>
       </div>
     </form>
   );

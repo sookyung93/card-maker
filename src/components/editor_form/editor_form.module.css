@@ -1,5 +1,4 @@
 @value makerBlack, makerWhite, makerBeige, makerBrown from '../../common/colors.css';
-
 .editor {
   display: flex;
   flex-direction: column;
@@ -50,10 +49,6 @@
   outline: 0;
 }
 
-.title {
-  /* border-right: 1px solid makerBlack; */
-}
-
 .message {
   padding: 0.3rem;
   flex: 1;
@@ -63,13 +58,13 @@
   outline: 0;
 }
 
-.fileName {
+.ImageFileUpload {
   padding: 0.5rem;
   flex: 1 1 50%;
   border: 0.5px solid makerBlack;
-  /* border-right: 1px solid makerBlack; */
   color: makerBlack;
   background-color: makerBeige;
+  cursor: pointer;
 }
 
 .button {
@@ -78,4 +73,9 @@
   color: makerWhite;
   background-color: makerBrown;
   outline: 0;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.8;
 }

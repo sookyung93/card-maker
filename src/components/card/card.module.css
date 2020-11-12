@@ -1,4 +1,4 @@
-@value makerBlack, makerLightBeige, makerColorful from '../../common/colors.css';
+@value makerBlack, makerLightGrey, makerColorful from '../../common/colors.css';
 
 p {
   margin: 0;
@@ -19,7 +19,7 @@ p {
 }
 
 .card.light {
-  background-color: makerLightBeige;
+  background-color: makerLightGrey;
   color: makerBlack;
 }
 

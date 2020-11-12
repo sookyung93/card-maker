@@ -1,4 +1,5 @@
 @value makerBlack, makerWhite, makerBeige, makerBrown from '../../common/colors.css';
+
 .editor {
   display: flex;
   flex-direction: column;
@@ -24,8 +25,6 @@
   padding: 0.3rem;
   border: 0;
   border: 0.5px solid makerBlack;
-  /* border-bottom: 1px solid makerBlack;
-  border-right: 1px solid makerBlack; */
   outline: 0;
 }
 
@@ -34,7 +33,6 @@
   flex: 1;
   padding: 0.3rem;
   border: 0.5px solid makerBlack;
-  /* border-bottom: 1px solid makerBlack; */
   outline: 0;
 }
 
@@ -44,8 +42,6 @@
   padding: 0.3rem;
   border: 0;
   border: 0.5px solid makerBlack;
-  /* border-top: 1px solid makerBlack;
-  border-bottom: 1px solid makerBlack; */
   outline: 0;
 }
 
@@ -54,7 +50,6 @@
   flex: 1;
   border: 0;
   border: 0.5px solid makerBlack;
-  /* border-bottom: 1px solid makerBlack; */
   outline: 0;
 }
 
@@ -74,6 +69,7 @@
 .button {
   padding: 0.5rem;
   flex: 1 1 50%;
+  border: 0.5px solid makerBlack;
   color: makerWhite;
   background-color: makerBrown;
   outline: 0;

@@ -28,6 +28,8 @@ function getStyles(theme) {
       return styles.light;
     case 'colorful':
       return styles.colorful;
+    default:
+      throw new Error(`unknow theme: ${theme}`);
   }
 }
 export default Card;

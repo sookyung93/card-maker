@@ -1,3 +1,22 @@
+@value makerBlack, makerBrown, makerBlue from '../../common/colors.css';
+
 .button {
+  padding: 0.5rem;
+  flex: 1 1 50%;
+  border: 0.5px solid makerBlack;
+  color: makerWhite;
+  outline: 0;
   cursor: pointer;
+}
+
+.button.delete {
+  background-color: makerBrown;
+}
+
+.button.add {
+  background-color: makerBlue;
+}
+
+.button:hover {
+  opacity: 0.8;
 }

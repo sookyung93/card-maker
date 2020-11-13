@@ -1,4 +1,5 @@
 import React from 'react';
+import AddForm from '../add_form/add_form';
 import EditorForm from '../editor_form/editor_form';
 import styles from './editor.module.css';
 
@@ -11,6 +12,7 @@ const Editor = ({ cards }) => {
           <EditorForm key={card.id} card={card} />
         ))}
       </ul>
+      <AddForm />
     </section>
   );
 };

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import ImageFileUpload from '../image_file_upload/image_file_upload';
 import EditorButton from '../editor_button/editor_button';
 import styles from './editor_form.module.css';
@@ -20,7 +20,7 @@ const EditorForm = ({ card }) => {
       <div className={styles.line1}>
         <input className={styles.name} type="text" value={name} />
         <input className={styles.company} type="text" value={company} />
-        <select className={styles.select} name="" id="">
+        <select className={styles.select} name="" id="selectTheme">
           <option value="light">light</option>
           <option value="dark">dark</option>
           <option value="colorful">colorful</option>
@@ -34,14 +34,8 @@ const EditorForm = ({ card }) => {
         <textarea className={styles.message} type="text" value={message} />
       </div>
       <div className={styles.line4}>
-        {/* <div className={styles.fileName}>{fileName}</div> */}
-        <div className={styles.ImageFileUpload}>
-          <ImageFileUpload fileName={fileName} />
-        </div>
-        {/* <button className={styles.button}>Delete</button> */}
-        <div className={styles.button}>
-          <EditorButton text="Delete" onClick={onSubmit} />
-        </div>
+        <ImageFileUpload fileName={fileName} />
+        <EditorButton text="Delete" onClick={onSubmit} />
       </div>
     </form>
   );

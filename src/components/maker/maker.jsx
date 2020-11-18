@@ -7,8 +7,8 @@ import Header from '../header/header';
 import styles from './maker.module.css';
 
 const Maker = (props) => {
-  const [cards, setCards] = useState([
-    {
+  const [cards, setCards] = useState({
+    1: {
       id: '1',
       name: 'Bomi',
       company: 'Apink',
@@ -19,7 +19,7 @@ const Maker = (props) => {
       fileName: 'bomi',
       fileURL: 'images/BOMI.jpg',
     },
-    {
+    2: {
       id: '2',
       name: 'SungGyu',
       company: 'Infinite',
@@ -30,7 +30,7 @@ const Maker = (props) => {
       fileName: 'sunggyu',
       fileURL: 'images/SUNGGYU.jpg',
     },
-    {
+    3: {
       id: '3',
       name: 'SooBin',
       company: 'DOOSAN BEARS',
@@ -41,11 +41,10 @@ const Maker = (props) => {
       fileName: 'soobin',
       fileURL: null,
     },
-  ]);
+  });
 
   const history = useHistory();
   const onLogout = () => {
-    console.log('logout');
     props.authService.logout();
   };
 
@@ -57,21 +56,32 @@ const Maker = (props) => {
     });
   });
 
-  const addNewCard = (newCard) => {
-    const updated = [...cards, newCard];
-    setCards(updated);
+  const deleteCard = (card) => {
+    setCards((cards) => {
+      const deleted = { ...cards };
+      delete deleted[card.id];
+      return deleted;
+    });
   };
 
-  const deleteCard = (uid) => {
-    const deleted = cards.filter((card) => card.id !== uid);
-    setCards(deleted);
+  const addOrChangeCard = (card) => {
+    setCards((cards) => {
+      const changed = { ...cards, [card.id]: card };
+      console.log(changed);
+      return changed;
+    });
   };
 
   return (
     <section className={styles.maker}>
       <Header onLogout={onLogout} />
       <div className={styles.container}>
-        <Editor cards={cards} addNewCard={addNewCard} deleteCard={deleteCard} />
+        <Editor
+          cards={cards}
+          addNewCard={addOrChangeCard}
+          deleteCard={deleteCard}
+          changeCard={addOrChangeCard}
+        />
         <CardPreview cards={cards} />
       </div>
       <Footer />

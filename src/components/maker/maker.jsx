@@ -62,11 +62,17 @@ const Maker = (props) => {
     setCards(updated);
   };
 
+  const deleteCard = (uid) => {
+    console.log(uid);
+    const deleted = cards.filter((card) => card.id !== uid);
+    setCards(deleted);
+  };
+
   return (
     <section className={styles.maker}>
       <Header onLogout={onLogout} />
       <div className={styles.container}>
-        <Editor cards={cards} addNewCard={addNewCard} />
+        <Editor cards={cards} addNewCard={addNewCard} deleteCard={deleteCard} />
         <CardPreview cards={cards} />
       </div>
       <Footer />

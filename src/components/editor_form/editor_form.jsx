@@ -3,7 +3,7 @@ import ImageFileUpload from '../image_file_upload/image_file_upload';
 import EditorButton from '../editor_button/editor_button';
 import styles from './editor_form.module.css';
 
-const EditorForm = ({ card }) => {
+const EditorForm = ({ card, deleteCard }) => {
   const {
     name,
     company,
@@ -14,7 +14,11 @@ const EditorForm = ({ card }) => {
     fileName,
     fileURL,
   } = card;
-  const onSubmit = () => {};
+  const onSubmit = (event) => {
+    event.preventDefault();
+    const uid = card.id;
+    deleteCard(uid);
+  };
   return (
     <form className={styles.editor}>
       <div className={styles.line1}>

@@ -57,11 +57,16 @@ const Maker = (props) => {
     });
   });
 
+  const addNewCard = (newCard) => {
+    const updated = [...cards, newCard];
+    setCards(updated);
+  };
+
   return (
     <section className={styles.maker}>
       <Header onLogout={onLogout} />
       <div className={styles.container}>
-        <Editor cards={cards} />
+        <Editor cards={cards} addNewCard={addNewCard} />
         <CardPreview cards={cards} />
       </div>
       <Footer />

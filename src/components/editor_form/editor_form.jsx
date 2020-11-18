@@ -18,8 +18,8 @@ const EditorForm = ({ card }) => {
   return (
     <form className={styles.editor}>
       <div className={styles.line1}>
-        <input className={styles.name} type="text" value={name} />
-        <input className={styles.company} type="text" value={company} />
+        <input className={styles.name} type="text" defaultValue={name} />
+        <input className={styles.company} type="text" defaultValue={company} />
         <select className={styles.select} name="" id="selectTheme">
           <option value="light">light</option>
           <option value="dark">dark</option>
@@ -27,11 +27,15 @@ const EditorForm = ({ card }) => {
         </select>
       </div>
       <div className={styles.line2}>
-        <input className={styles.title} type="text" value={title} />
-        <input className={styles.email} type="text" value={email} />
+        <input className={styles.title} type="text" defaultValue={title} />
+        <input className={styles.email} type="text" defaultValue={email} />
       </div>
       <div className={styles.line3}>
-        <textarea className={styles.message} type="text" value={message} />
+        <textarea
+          className={styles.message}
+          type="text"
+          defaultValue={message}
+        />
       </div>
       <div className={styles.line4}>
         <ImageFileUpload fileName={fileName} />

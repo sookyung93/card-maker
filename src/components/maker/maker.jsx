@@ -63,7 +63,6 @@ const Maker = (props) => {
   };
 
   const deleteCard = (uid) => {
-    console.log(uid);
     const deleted = cards.filter((card) => card.id !== uid);
     setCards(deleted);
   };

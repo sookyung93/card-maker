@@ -1,6 +1,6 @@
 @value makerBlack, makerBeige from '../../common/colors.css';
 
-.button {
+.container {
   padding: 0.5rem;
   flex: 1 1 50%;
   border: 0.5px solid makerBlack;
@@ -9,6 +9,16 @@
   cursor: pointer;
 }
 
-.button:hover {
+.container:hover {
   opacity: 0.8;
+}
+
+.button {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.input {
+  display: none;
 }

@@ -6,7 +6,7 @@ import Footer from '../footer/footer';
 import Header from '../header/header';
 import styles from './maker.module.css';
 
-const Maker = (props) => {
+const Maker = ({ FileInput, authService }) => {
   const [cards, setCards] = useState({
     1: {
       id: '1',
@@ -16,7 +16,7 @@ const Maker = (props) => {
       title: 'Software Engineer',
       email: 'bomi@gmail.com',
       message: 'Hello',
-      fileName: 'bomi',
+      fileName: '',
       fileURL: 'images/BOMI.jpg',
     },
     2: {
@@ -27,7 +27,7 @@ const Maker = (props) => {
       title: 'Software Engineer',
       email: 'gyu@gmail.com',
       message: 'Hello',
-      fileName: 'sunggyu',
+      fileName: '',
       fileURL: 'images/SUNGGYU.jpg',
     },
     3: {
@@ -38,18 +38,18 @@ const Maker = (props) => {
       title: 'Software Engineer',
       email: 'soobin@gmail.com',
       message: 'Hello',
-      fileName: 'soobin',
+      fileName: '',
       fileURL: null,
     },
   });
 
   const history = useHistory();
   const onLogout = () => {
-    props.authService.logout();
+    authService.logout();
   };
 
   useEffect(() => {
-    props.authService.onAuthChanged((user) => {
+    authService.onAuthChanged((user) => {
       if (!user) {
         history.push('/');
       }
@@ -67,7 +67,6 @@ const Maker = (props) => {
   const addOrChangeCard = (card) => {
     setCards((cards) => {
       const changed = { ...cards, [card.id]: card };
-      console.log(changed);
       return changed;
     });
   };
@@ -77,6 +76,7 @@ const Maker = (props) => {
       <Header onLogout={onLogout} />
       <div className={styles.container}>
         <Editor
+          FileInput={FileInput}
           cards={cards}
           addNewCard={addOrChangeCard}
           deleteCard={deleteCard}

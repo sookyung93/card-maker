@@ -1,9 +1,8 @@
 import React, { useRef } from 'react';
-import ImageFileUpload from '../image_file_upload/image_file_upload';
 import EditorButton from '../editor_button/editor_button';
 import styles from './editor_form.module.css';
 
-const EditorForm = ({ card, deleteCard, changeCard }) => {
+const EditorForm = ({ FileInput, card, deleteCard, changeCard }) => {
   const {
     name,
     company,
@@ -21,6 +20,15 @@ const EditorForm = ({ card, deleteCard, changeCard }) => {
   };
 
   const nameRef = useRef();
+
+  const onFileChange = (file) => {
+    changeCard({
+      ...card,
+      fileName: file.name,
+      fileURL: file.url,
+    });
+  };
+
   const onChange = (event) => {
     if (event.currentTarget === null) {
       return;
@@ -89,7 +97,7 @@ const EditorForm = ({ card, deleteCard, changeCard }) => {
         />
       </div>
       <div className={styles.line4}>
-        <ImageFileUpload fileName={fileName} />
+        <FileInput fileName={fileName} onFileChange={onFileChange} />
         <EditorButton text="Delete" onClick={onSubmit} />
       </div>
     </form>

@@ -1,16 +1,23 @@
-@value makerBlack, makerBeige from '../../common/colors.css';
+@value makerBlack, makerBeige, makerLightPink from '../../common/colors.css';
 
 .container {
   padding: 0.5rem;
   flex: 1 1 50%;
   border: 0.5px solid makerBlack;
   color: makerBlack;
-  background-color: makerBeige;
   cursor: pointer;
 }
 
 .container:hover {
   opacity: 0.8;
+}
+
+.container.unnamedBtn {
+  background-color: makerBeige;
+}
+
+.container.namedBtn {
+  background-color: makerLightPink;
 }
 
 .button {

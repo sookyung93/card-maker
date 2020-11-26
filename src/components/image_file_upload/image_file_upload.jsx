@@ -15,8 +15,10 @@ const ImageFileUpload = ({ imageUploader, fileName, onFileChange }) => {
       url: uploaded.url,
     });
   };
+
+  const btnColor = fileName !== null ? styles.namedBtn : styles.unnamedBtn;
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${btnColor}`}>
       <input
         ref={inputRef}
         className={styles.input}

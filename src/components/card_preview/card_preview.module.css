@@ -4,6 +4,7 @@
   flex: 1 1 50%;
   text-align: center;
   background-color: makerWhite;
+  overflow-y: auto;
 }
 
 .title {

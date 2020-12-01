@@ -9,6 +9,7 @@
 }
 
 .container {
+  min-height: 0;
   display: flex;
   flex: 1;
 }

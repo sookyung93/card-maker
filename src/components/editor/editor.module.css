@@ -2,9 +2,11 @@
 
 .maker {
   flex: 1 1 50%;
+  padding: 0 1rem 1rem 1rem;
   text-align: center;
   border-right: 1px solid makerLightGrey;
   background-color: makerWhite;
+  overflow-y: auto;
 }
 
 .title {

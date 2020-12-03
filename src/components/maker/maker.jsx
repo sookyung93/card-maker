@@ -6,7 +6,7 @@ import Footer from '../footer/footer';
 import Header from '../header/header';
 import styles from './maker.module.css';
 
-const Maker = ({ FileInput, authService }) => {
+const Maker = ({ FileInput, authService, cardRepository }) => {
   const [cards, setCards] = useState({
     1: {
       id: '1',
@@ -19,29 +19,10 @@ const Maker = ({ FileInput, authService }) => {
       fileName: 'Bomi',
       fileURL: 'images/BOMI.jpg',
     },
-    2: {
-      id: '2',
-      name: 'SungGyu',
-      company: 'Infinite',
-      theme: 'light',
-      title: 'Software Engineer',
-      email: 'gyu@gmail.com',
-      message: 'Hello',
-      fileName: 'SungGyu',
-      fileURL: 'images/SUNGGYU.jpg',
-    },
-    3: {
-      id: '3',
-      name: 'SooBin',
-      company: 'DOOSAN BEARS',
-      theme: 'colorful',
-      title: 'Software Engineer',
-      email: 'soobin@gmail.com',
-      message: 'Hello',
-      fileName: null,
-      fileURL: null,
-    },
   });
+
+  const historyState = useHistory().state;
+  const [userId, setUserId] = useState(historyState && historyState.id);
 
   const history = useHistory();
   const onLogout = () => {
@@ -49,12 +30,36 @@ const Maker = ({ FileInput, authService }) => {
   };
 
   useEffect(() => {
+    if (!userId) {
+      return;
+    }
+    const stopSync = cardRepository.syncCards(userId, (cards) => {
+      setCards(cards);
+    });
+    //unmount가 되었을 때, 컴포넌트가 더 이상 보여지지 않을 때
+    //마무리 하고 싶으면 return 사용
+    //unmonut가 되면 리액트가 자동으로 return의 함수 호출
+    //리소스나 메모리 정리 가능
+    return () => stopSync();
+  }, [userId]);
+
+  useEffect(() => {
     authService.onAuthChanged((user) => {
-      if (!user) {
+      if (user) {
+        setUserId(user.uid);
+      } else {
         history.push('/');
       }
     });
   });
+
+  const addOrChangeCard = (card) => {
+    setCards((cards) => {
+      const changed = { ...cards, [card.id]: card };
+      return changed;
+    });
+    cardRepository.saveCard(userId, card);
+  };
 
   const deleteCard = (card) => {
     setCards((cards) => {
@@ -62,13 +67,7 @@ const Maker = ({ FileInput, authService }) => {
       delete deleted[card.id];
       return deleted;
     });
-  };
-
-  const addOrChangeCard = (card) => {
-    setCards((cards) => {
-      const changed = { ...cards, [card.id]: card };
-      return changed;
-    });
+    cardRepository.removeCard(userId, card);
   };
 
   return (

@@ -41,7 +41,7 @@ const Maker = ({ FileInput, authService, cardRepository }) => {
     //unmonut가 되면 리액트가 자동으로 return의 함수 호출
     //리소스나 메모리 정리 가능
     return () => stopSync();
-  }, [userId]);
+  }, [userId, cardRepository]);
 
   useEffect(() => {
     authService.onAuthChanged((user) => {
@@ -51,7 +51,7 @@ const Maker = ({ FileInput, authService, cardRepository }) => {
         history.push('/');
       }
     });
-  });
+  }, [authService, userId, history]); //불필요하게 계속 등록 하지 않고 업데이트 될 때만 호출되로록 디펜던시 작성
 
   const addOrChangeCard = (card) => {
     setCards((cards) => {

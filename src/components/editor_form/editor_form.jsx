@@ -3,16 +3,7 @@ import EditorButton from '../editor_button/editor_button';
 import styles from './editor_form.module.css';
 
 const EditorForm = ({ FileInput, card, deleteCard, changeCard }) => {
-  const {
-    name,
-    company,
-    title,
-    email,
-    message,
-    theme,
-    fileName,
-    fileURL,
-  } = card;
+  const { name, company, title, email, message, theme, fileName } = card;
 
   const onSubmit = (event) => {
     event.preventDefault();
@@ -34,9 +25,9 @@ const EditorForm = ({ FileInput, card, deleteCard, changeCard }) => {
       return;
     }
     event.preventDefault();
-    const uid = card.id;
-    const item = event.target.name;
-    const value = event.target.value;
+    // const uid = card.id;
+    // const item = event.target.name;
+    // const value = event.target.value;
     changeCard({
       ...card,
       [event.target.name]: event.target.value,
@@ -64,6 +55,7 @@ const EditorForm = ({ FileInput, card, deleteCard, changeCard }) => {
           className={styles.select}
           name="theme"
           id="selectTheme"
+          value={theme}
           onChange={onChange}
         >
           <option value="light">light</option>

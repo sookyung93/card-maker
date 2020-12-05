@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "https://sookyung93.github.io/card-maker/static/css/main.dac5b1e2.chunk.css",
-    "main.js": "https://sookyung93.github.io/card-maker/static/js/main.d32ce6d7.chunk.js",
-    "main.js.map": "https://sookyung93.github.io/card-maker/static/js/main.d32ce6d7.chunk.js.map",
+    "main.css": "https://sookyung93.github.io/card-maker/static/css/main.cdba9b1f.chunk.css",
+    "main.js": "https://sookyung93.github.io/card-maker/static/js/main.57920d04.chunk.js",
+    "main.js.map": "https://sookyung93.github.io/card-maker/static/js/main.57920d04.chunk.js.map",
     "runtime-main.js": "https://sookyung93.github.io/card-maker/static/js/runtime-main.5b6fe8e1.js",
     "runtime-main.js.map": "https://sookyung93.github.io/card-maker/static/js/runtime-main.5b6fe8e1.js.map",
     "static/js/2.2185ace9.chunk.js": "https://sookyung93.github.io/card-maker/static/js/2.2185ace9.chunk.js",
     "static/js/2.2185ace9.chunk.js.map": "https://sookyung93.github.io/card-maker/static/js/2.2185ace9.chunk.js.map",
     "index.html": "https://sookyung93.github.io/card-maker/index.html",
-    "precache-manifest.80fdc3bcf081fbb18bd972b75fd52cd5.js": "https://sookyung93.github.io/card-maker/precache-manifest.80fdc3bcf081fbb18bd972b75fd52cd5.js",
+    "precache-manifest.b9ce89966a5e090184e537381482fd66.js": "https://sookyung93.github.io/card-maker/precache-manifest.b9ce89966a5e090184e537381482fd66.js",
     "service-worker.js": "https://sookyung93.github.io/card-maker/service-worker.js",
-    "static/css/main.dac5b1e2.chunk.css.map": "https://sookyung93.github.io/card-maker/static/css/main.dac5b1e2.chunk.css.map",
+    "static/css/main.cdba9b1f.chunk.css.map": "https://sookyung93.github.io/card-maker/static/css/main.cdba9b1f.chunk.css.map",
     "static/js/2.2185ace9.chunk.js.LICENSE.txt": "https://sookyung93.github.io/card-maker/static/js/2.2185ace9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.5b6fe8e1.js",
     "static/js/2.2185ace9.chunk.js",
-    "static/css/main.dac5b1e2.chunk.css",
-    "static/js/main.d32ce6d7.chunk.js"
+    "static/css/main.cdba9b1f.chunk.css",
+    "static/js/main.57920d04.chunk.js"
   ]
 }

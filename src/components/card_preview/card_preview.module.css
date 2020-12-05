@@ -1,4 +1,4 @@
-@value makerDarkBlue, makerWhite from '../../common/colors.css';
+@value makerPurple, makerWhite from '../../common/colors.css';
 
 .preview {
   flex: 1 1 50%;
@@ -8,7 +8,7 @@
 }
 
 .title {
-  color: makerDarkBlue;
+  color: makerPurple;
   margin: 1rem;
 }
 

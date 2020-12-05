@@ -1,4 +1,4 @@
-@value makerGreen from './common/colors.css';
+@value makerLightPurple from './common/colors.css';
 
 * {
   box-sizing: border-box;
@@ -10,5 +10,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: makerGreen;
+  background-color: makerLightPurple;
 }

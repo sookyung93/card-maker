@@ -1,4 +1,4 @@
-@value makerBlack, makerBrown, makerBlue, makerWhite from '../../common/colors.css';
+@value makerBlack, makerRedPink, makerPurpleBlue, makerWhite from '../../common/colors.css';
 
 .button {
   padding: 0.5rem;
@@ -10,12 +10,12 @@
 }
 
 .button.delete {
-  background-color: makerBrown;
+  background-color: makerRedPink;
   color: makerWhite;
 }
 
 .button.add {
-  background-color: makerBlue;
+  background-color: makerPurpleBlue;
 }
 
 .button:hover {

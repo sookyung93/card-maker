@@ -1,4 +1,4 @@
-@value makerBlack, makerBeige, makerLightPink, makerGrey, makerRed from '../../common/colors.css';
+@value makerBlack, makerBeige, makerPink, makerGrey, makerRed from '../../common/colors.css';
 
 .container {
   display: flex;
@@ -20,7 +20,7 @@
 }
 
 .container.namedBtn {
-  background-color: makerLightPink;
+  background-color: makerPink;
 }
 
 .button {

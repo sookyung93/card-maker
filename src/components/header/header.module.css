@@ -1,9 +1,9 @@
-@value makerDarkBlue, makerBlue, makerWhite, makerLightPink from '../../common/colors.css';
+@value makerPink, makerDarkBlue, makerDarkPink, makerWhite, makerLightPink from '../../common/colors.css';
 
 .header {
   width: 100%;
   padding: 0.5em;
-  background-color: makerDarkBlue;
+  background-color: makerPink;
   text-align: center;
   position: relative;
 }
@@ -15,9 +15,9 @@
   cursor: pointer;
   right: 0.5em;
   top: 0.5em;
-  border: 1px solid makerBlue;
+  border: 1px solid makerDarkPink;
   border-radius: 4px;
-  background-color: makerBlue;
+  background-color: makerDarkPink;
 }
 
 .logo {

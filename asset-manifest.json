@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "https://sookyung93.github.io/card-maker/static/css/main.1ccc2fdd.chunk.css",
-    "main.js": "https://sookyung93.github.io/card-maker/static/js/main.4ada01f2.chunk.js",
-    "main.js.map": "https://sookyung93.github.io/card-maker/static/js/main.4ada01f2.chunk.js.map",
+    "main.css": "https://sookyung93.github.io/card-maker/static/css/main.dac5b1e2.chunk.css",
+    "main.js": "https://sookyung93.github.io/card-maker/static/js/main.d32ce6d7.chunk.js",
+    "main.js.map": "https://sookyung93.github.io/card-maker/static/js/main.d32ce6d7.chunk.js.map",
     "runtime-main.js": "https://sookyung93.github.io/card-maker/static/js/runtime-main.5b6fe8e1.js",
     "runtime-main.js.map": "https://sookyung93.github.io/card-maker/static/js/runtime-main.5b6fe8e1.js.map",
-    "static/js/2.70098f4e.chunk.js": "https://sookyung93.github.io/card-maker/static/js/2.70098f4e.chunk.js",
-    "static/js/2.70098f4e.chunk.js.map": "https://sookyung93.github.io/card-maker/static/js/2.70098f4e.chunk.js.map",
+    "static/js/2.2185ace9.chunk.js": "https://sookyung93.github.io/card-maker/static/js/2.2185ace9.chunk.js",
+    "static/js/2.2185ace9.chunk.js.map": "https://sookyung93.github.io/card-maker/static/js/2.2185ace9.chunk.js.map",
     "index.html": "https://sookyung93.github.io/card-maker/index.html",
-    "precache-manifest.f22bdbfb49503cc0b18390ef66a2ee69.js": "https://sookyung93.github.io/card-maker/precache-manifest.f22bdbfb49503cc0b18390ef66a2ee69.js",
+    "precache-manifest.80fdc3bcf081fbb18bd972b75fd52cd5.js": "https://sookyung93.github.io/card-maker/precache-manifest.80fdc3bcf081fbb18bd972b75fd52cd5.js",
     "service-worker.js": "https://sookyung93.github.io/card-maker/service-worker.js",
-    "static/css/main.1ccc2fdd.chunk.css.map": "https://sookyung93.github.io/card-maker/static/css/main.1ccc2fdd.chunk.css.map",
-    "static/js/2.70098f4e.chunk.js.LICENSE.txt": "https://sookyung93.github.io/card-maker/static/js/2.70098f4e.chunk.js.LICENSE.txt"
+    "static/css/main.dac5b1e2.chunk.css.map": "https://sookyung93.github.io/card-maker/static/css/main.dac5b1e2.chunk.css.map",
+    "static/js/2.2185ace9.chunk.js.LICENSE.txt": "https://sookyung93.github.io/card-maker/static/js/2.2185ace9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.5b6fe8e1.js",
-    "static/js/2.70098f4e.chunk.js",
-    "static/css/main.1ccc2fdd.chunk.css",
-    "static/js/main.4ada01f2.chunk.js"
+    "static/js/2.2185ace9.chunk.js",
+    "static/css/main.dac5b1e2.chunk.css",
+    "static/js/main.d32ce6d7.chunk.js"
   ]
 }

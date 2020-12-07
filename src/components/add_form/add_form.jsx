@@ -1,8 +1,8 @@
-import React, { useRef, useState } from 'react';
+import React, { memo, useRef, useState } from 'react';
 import EditorButton from '../editor_button/editor_button';
 import styles from './add_form.module.css';
 
-const AddForm = ({ FileInput, addNewCard }) => {
+const AddForm = memo(({ FileInput, addNewCard }) => {
   const nameRef = useRef();
   const companyRef = useRef();
   const themeRef = useRef();
@@ -89,6 +89,6 @@ const AddForm = ({ FileInput, addNewCard }) => {
       </div>
     </form>
   );
-};
+});
 
 export default AddForm;

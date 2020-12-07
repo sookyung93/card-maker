@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import Editor from '../editor/editor';
 import CardPreview from '../card_preview/card_preview';
@@ -25,9 +25,13 @@ const Maker = ({ FileInput, authService, cardRepository }) => {
   const [userId, setUserId] = useState(historyState && historyState.id);
 
   const history = useHistory();
-  const onLogout = () => {
+  const onLogout = useCallback(() => {
     authService.logout();
-  };
+  }, [authService]); //useCallback을 사용한다는 것은 state, props가 변경 되어도 우리가
+  //한 번 만든 함 수를 계속 재사용 하겠다는 것.
+  //즉, authService를 받아오는데, authService가 변경되어도 처음에 정의된
+  //함수를 계속 사용 한다는 의미
+  //따라서 디펜던시로 authService를 전달해서, authService가 변경되면 함수를 다시 호출하도록 한다
 
   useEffect(() => {
     if (!userId) {

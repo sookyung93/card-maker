@@ -1,8 +1,8 @@
-import React, { useRef } from 'react';
+import React, { memo, useRef } from 'react';
 import EditorButton from '../editor_button/editor_button';
 import styles from './editor_form.module.css';
 
-const EditorForm = ({ FileInput, card, deleteCard, changeCard }) => {
+const EditorForm = memo(({ FileInput, card, deleteCard, changeCard }) => {
   const { name, company, title, email, message, theme, fileName } = card;
 
   const onSubmit = (event) => {
@@ -94,6 +94,6 @@ const EditorForm = ({ FileInput, card, deleteCard, changeCard }) => {
       </div>
     </form>
   );
-};
+});
 
 export default EditorForm;

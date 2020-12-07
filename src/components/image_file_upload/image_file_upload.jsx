@@ -1,7 +1,7 @@
-import React, { useRef, useState } from 'react';
+import React, { memo, useRef, useState } from 'react';
 import styles from './image_file_upload.module.css';
 
-const ImageFileUpload = ({ imageUploader, fileName, onFileChange }) => {
+const ImageFileUpload = memo(({ imageUploader, fileName, onFileChange }) => {
   const [loading, setLoading] = useState(false);
 
   const inputRef = useRef();
@@ -39,6 +39,6 @@ const ImageFileUpload = ({ imageUploader, fileName, onFileChange }) => {
       {loading && <div className={styles.loadingSpin}></div>}
     </div>
   );
-};
+});
 
 export default ImageFileUpload;

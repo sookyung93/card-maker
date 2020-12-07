@@ -14,7 +14,7 @@ const AddForm = memo(({ FileInput, addNewCard }) => {
 
   const onFileChange = (file) => {
     setFile({
-      fileName: file.name,
+      fileName: file.name ? file.name : null,
       fileURL: file.url,
     });
   };

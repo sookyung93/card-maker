@@ -20,9 +20,12 @@ const ImageFileUpload = memo(({ imageUploader, fileName, onFileChange }) => {
     });
   };
 
-  const btnColor = fileName !== null ? styles.namedBtn : styles.unnamedBtn;
   return (
-    <div className={`${styles.container} ${btnColor}`}>
+    <div
+      className={`${styles.container} ${
+        fileName ? styles.namedBtn : styles.unnamedBtn
+      }`}
+    >
       <input
         ref={inputRef}
         className={styles.input}
@@ -32,7 +35,7 @@ const ImageFileUpload = memo(({ imageUploader, fileName, onFileChange }) => {
         onChange={onChange}
       />
       {!loading && (
-        <button className={styles.button} onClick={onButtonClick}>
+        <button className={`${styles.button} `} onClick={onButtonClick}>
           {fileName || 'No file'}
         </button>
       )}

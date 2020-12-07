@@ -7,19 +7,7 @@ import Header from '../header/header';
 import styles from './maker.module.css';
 
 const Maker = ({ FileInput, authService, cardRepository }) => {
-  const [cards, setCards] = useState({
-    1: {
-      id: '1',
-      name: 'Bomi',
-      company: 'Apink',
-      theme: 'dark',
-      title: 'Software Engineer',
-      email: 'bomi@gmail.com',
-      message: 'Hello',
-      fileName: 'Bomi',
-      fileURL: 'images/BOMI.jpg',
-    },
-  });
+  const [cards, setCards] = useState({});
 
   const historyState = useHistory().state;
   const [userId, setUserId] = useState(historyState && historyState.id);

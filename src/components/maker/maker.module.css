@@ -16,6 +16,7 @@
 
 @media screen and (max-width: mediaQuery) {
   .maker {
+    width: 100%;
     height: 100%;
   }
   .container {

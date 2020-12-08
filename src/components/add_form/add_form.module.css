@@ -48,6 +48,7 @@
 
 .message {
   padding: 0.3rem;
+  resize: none;
   flex: 1;
   border: 0;
   border: 0.5px solid makerBlack;

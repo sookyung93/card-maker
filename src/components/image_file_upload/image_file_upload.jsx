@@ -36,7 +36,7 @@ const ImageFileUpload = memo(({ imageUploader, fileName, onFileChange }) => {
       />
       {!loading && (
         <button className={`${styles.button} `} onClick={onButtonClick}>
-          {fileName || 'No file'}
+          {fileName || 'No Image'}
         </button>
       )}
       {loading && <div className={styles.loadingSpin}></div>}

@@ -24,7 +24,7 @@
   flex: 1 1 40%;
   padding: 0.3rem;
   border: 0;
-  border: 0.5px solid makerBlack;
+  border: 1px solid makerBlack;
   outline: 0;
 }
 
@@ -32,7 +32,7 @@
   border: 0;
   flex: 1;
   padding: 0.3rem;
-  border: 0.5px solid makerBlack;
+  border: 1px solid makerBlack;
   outline: 0;
 }
 
@@ -41,7 +41,7 @@
   flex: 1 1 50%;
   padding: 0.3rem;
   border: 0;
-  border: 0.5px solid makerBlack;
+  border: 1px solid makerBlack;
   outline: 0;
 }
 
@@ -50,14 +50,14 @@
   resize: none;
   flex: 1;
   border: 0;
-  border: 0.5px solid makerBlack;
+  border: 1px solid makerBlack;
   outline: 0;
 }
 
 .ImageFileUpload {
   padding: 0.5rem;
   flex: 1 1 50%;
-  border: 0.5px solid makerBlack;
+  border: 1px solid makerBlack;
   color: makerBlack;
   background-color: makerBeige;
   cursor: pointer;

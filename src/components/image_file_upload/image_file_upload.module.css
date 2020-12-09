@@ -6,7 +6,7 @@
   padding: 0.5rem;
   display: flex;
   flex: 1 1 50%;
-  border: 0.5px solid makerBlack;
+  border: 1px solid makerBlack;
   align-items: center;
   justify-content: center;
 }
@@ -20,6 +20,7 @@
   height: 100%;
   color: makerBlack;
   cursor: pointer;
+  border: none;
 }
 
 .container.unnamedBtn {

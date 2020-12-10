@@ -28,6 +28,7 @@ const EditorForm = memo(({ FileInput, card, deleteCard, changeCard }) => {
     // const uid = card.id;
     // const item = event.target.name;
     // const value = event.target.value;
+
     changeCard({
       ...card,
       [event.target.name]: event.target.value,

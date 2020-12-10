@@ -1,4 +1,4 @@
-@value makerWhite, makerBlack, makerWhite, makerBeige, makerBrown from '../../common/colors.css';
+@value makerBlack, makerWhite, makerBeige, makerBrown from '../../common/colors.css';
 
 .editor {
   display: flex;

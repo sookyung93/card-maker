@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 1rem 1rem 1rem;
+  background-color: makerWhite;
 }
 
 .line1,
@@ -29,6 +30,7 @@
 
 .select {
   width: 100%;
+  background-color: makerWhite;
   flex: 1 1 20%;
   border: 0;
   border-top: 1px solid makerBlack;

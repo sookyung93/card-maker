@@ -4,10 +4,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
   align-items: center;
   margin: 0 1rem 1rem 1rem;
-  border: 0.5px solid makerBlack;
 }
 
 .line1,
@@ -16,33 +14,43 @@
 .line4 {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
 }
 
 .name,
 .company {
+  width: 100%;
   flex: 1 1 40%;
   padding: 0.3rem;
   border: 0;
-  border: 1px solid makerBlack;
+  border-top: 1px solid makerBlack;
+  border-left: 1px solid makerBlack;
   outline: 0;
 }
 
 .select {
+  width: 100%;
+  flex: 1 1 20%;
   border: 0;
-  flex: 1;
+  border-top: 1px solid makerBlack;
+  border-left: 1px solid makerBlack;
+  border-right: 1px solid makerBlack;
   padding: 0.3rem;
-  border: 1px solid makerBlack;
   outline: 0;
 }
 
 .title,
 .email {
+  width: 100%;
   flex: 1 1 50%;
   padding: 0.3rem;
   border: 0;
-  border: 1px solid makerBlack;
+  border-top: 1px solid makerBlack;
+  border-left: 1px solid makerBlack;
   outline: 0;
+}
+
+.email {
+  border-right: 1px solid makerBlack;
 }
 
 .message {
@@ -50,16 +58,16 @@
   resize: none;
   flex: 1;
   border: 0;
-  border: 1px solid makerBlack;
+  border-top: 1px solid makerBlack;
+  border-left: 1px solid makerBlack;
+  border-right: 1px solid makerBlack;
   outline: 0;
 }
 
 .ImageFileUpload {
   padding: 0.5rem;
   flex: 1 1 50%;
-  border: 1px solid makerBlack;
   color: makerBlack;
-  background-color: makerBeige;
   cursor: pointer;
 }
 

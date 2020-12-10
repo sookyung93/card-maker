@@ -41,14 +41,14 @@ const EditorForm = memo(({ FileInput, card, deleteCard, changeCard }) => {
           className={styles.name}
           type="text"
           name="name"
-          defaultValue={name}
+          value={name}
           onChange={onChange}
         />
         <input
           className={styles.company}
           type="text"
           name="company"
-          defaultValue={company}
+          value={company}
           onChange={onChange}
         />
         <select

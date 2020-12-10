@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "https://sookyung93.github.io/card-maker/precache-manifest.2c4dfa459974a320025e608733f4a54f.js"
+  "https://sookyung93.github.io/card-maker/precache-manifest.5660193e60fb1eafa6098c6e438a0558.js"
 );
 
 self.addEventListener('message', (event) => {
